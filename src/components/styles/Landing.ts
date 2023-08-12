@@ -42,7 +42,7 @@ export const Card = styled.div`
 `;
 export const ImageContainer = styled.div<ImageContainerProps>`
   width: 500px;
-  height: 350px;
+  height: 750px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
