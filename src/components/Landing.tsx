@@ -177,8 +177,6 @@ const Landing = () => {
               </Table>
             </TableContainer>
           </Card>
-          <Card>
-          </Card>
         </Container>
         <Container>
           <Card>
@@ -209,6 +207,9 @@ const Landing = () => {
                 </tbody>
               </Table>
             </TableContainer>
+          </Card>
+          <Card>
+            <ImageContainer imageUrl="/Gin.png" />
           </Card>
         </Container>
       </BodyWrapper>
