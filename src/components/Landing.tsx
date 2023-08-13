@@ -326,7 +326,7 @@ const Landing = () => {
                       key={index}
                       style={{ borderBottom: "0.1px solid gray" }}
                     >
-                      <TableCell align="center">{product.name}</TableCell>
+                      <TableCell align="left">{product.name}</TableCell>
                       <TableCell align="center">{product.ksh}</TableCell>
                       <TableCell align="center">{product.usd}</TableCell>
                     </TableRow>
@@ -363,7 +363,7 @@ const Landing = () => {
                       key={index}
                       style={{ borderBottom: "0.1px solid gray" }}
                     >
-                      <TableCell align="center">{product.name}</TableCell>
+                      <TableCell align="left">{product.name}</TableCell>
                       <TableCell align="center">{product.ksh}</TableCell>
                       <TableCell align="center">{product.usd}</TableCell>
                     </TableRow>
@@ -394,7 +394,7 @@ const Landing = () => {
                       key={index}
                       style={{ borderBottom: "0.1px solid gray" }}
                     >
-                      <TableCell align="center">{product.name}</TableCell>
+                      <TableCell align="left">{product.name}</TableCell>
                       <TableCell align="center">{product.ksh}</TableCell>
                       <TableCell align="center">{product.usd}</TableCell>
                     </TableRow>
