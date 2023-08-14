@@ -290,13 +290,14 @@ const itemData = {
       ksh: "300.00",
       usd: "$2.14"
     }
-  ]
+  ],
+  Vapes: [{ name: "Vapes", ksh: "1500.00", usd: "$10.71" }]
 };
 
 const Landing = () => {
   const [isServer, setIsServer] = useState(false);
 
-  const { whiskey, Beer, Soft_Drinks } = itemData;
+  const { whiskey, Beer, Soft_Drinks, Vapes } = itemData;
 
   useEffect(() => {
     setIsServer(true);
@@ -312,7 +313,7 @@ const Landing = () => {
           <Card>
             <TableContainer>
               <TableHeader align="left">
-                <h1>whiskey</h1>
+                <h1 style={{ color: "#FFA500" }}>whiskey</h1>
               </TableHeader>
 
               <Table>
@@ -350,7 +351,7 @@ const Landing = () => {
           <Card>
             <TableContainer>
               <TableHeader align="left">
-                <h1>Beers</h1>
+                <h1 style={{ color: "#FFA500" }}>Beers</h1>
               </TableHeader>
               <Table>
                 <thead>
@@ -380,7 +381,7 @@ const Landing = () => {
           <Card>
             <TableContainer>
               <TableHeader align="left">
-                <h1>Soft-Drinks</h1>
+                <h1 style={{ color: "#FFA500" }}>Soft-Drinks</h1>
               </TableHeader>
 
               <Table>
@@ -410,6 +411,40 @@ const Landing = () => {
             <ImageContainer imageUrl="/soft-drinks.webp" />
           </Card>
         </Container3>
+        <Container>
+          <Card>
+            <ImageContainer imageUrl="/vapes.jpg" />
+          </Card>
+          <Card>
+            <TableContainer>
+              <TableHeader align="left">
+                <h1 style={{ color: "#FFA500" }}>Vapes</h1>
+              </TableHeader>
+
+              <Table>
+                <thead>
+                  <tr>
+                    <TableHeader>Product</TableHeader>
+                    <TableHeader>Price (Ksh)</TableHeader>
+                    <TableHeader>Price (USD)</TableHeader>
+                  </tr>
+                </thead>
+                <tbody>
+                  {Vapes.map((product, index) => (
+                    <TableRow
+                      key={index}
+                      // style={{ borderBottom: "0.1px solid gray" }}
+                    >
+                      <TableCell align="left">{product.name}</TableCell>
+                      <TableCell align="center">{product.ksh}</TableCell>
+                      <TableCell align="center">{product.usd}</TableCell>
+                    </TableRow>
+                  ))}
+                </tbody>
+              </Table>
+            </TableContainer>
+          </Card>
+        </Container>
       </BodyWrapper>
     </BodyContainer>
   );

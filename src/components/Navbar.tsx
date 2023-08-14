@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <BodyContainer>
       <NavbarContainer>
-        <h1>BAR BNB</h1>
+        <h1>BNB BAR</h1>
         <h3>Call/Whatsapp</h3>
         <h3>+254794701568</h3>
       </NavbarContainer>
