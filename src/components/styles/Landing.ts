@@ -29,14 +29,22 @@ export const Container = styled.div`
   @media screen and (max-width: 1700px) {
     width: 90%;
   }
-
   @media screen and (max-width: 1300px) {
     width: 100%;
     flex-direction: column-reverse;
   }
-  @media screen and (max-width: 768px) {
+`;
+
+export const Container1 = styled(Container)`
+  @media screen and (max-width: 1300px) {
     width: 100%;
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+`;
+export const Container3 = styled(Container)`
+  @media screen and (max-width: 1300px) {
+    width: 100%;
+    flex-direction: column;
   }
 `;
 

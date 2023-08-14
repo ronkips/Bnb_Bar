@@ -4,6 +4,8 @@ import {
   BodyWrapper,
   Card,
   Container,
+  Container1,
+  Container3,
   ImageContainer,
   Table,
   TableCell,
@@ -11,6 +13,7 @@ import {
   TableHeader,
   TableRow
 } from "./styles/Landing";
+
 const itemData = {
   whiskey: [
     {
@@ -305,7 +308,7 @@ const Landing = () => {
   return (
     <BodyContainer>
       <BodyWrapper>
-        <Container>
+        <Container1>
           <Card>
             <TableContainer>
               <TableHeader align="left">
@@ -338,7 +341,7 @@ const Landing = () => {
           <Card>
             <ImageContainer imageUrl="/whisky.png" />
           </Card>
-        </Container>
+        </Container1>
 
         <Container>
           <Card>
@@ -347,7 +350,7 @@ const Landing = () => {
           <Card>
             <TableContainer>
               <TableHeader align="left">
-                <h1>Beer</h1>
+                <h1>Beers</h1>
               </TableHeader>
               <Table>
                 <thead>
@@ -373,11 +376,11 @@ const Landing = () => {
             </TableContainer>
           </Card>
         </Container>
-        <Container>
+        <Container3>
           <Card>
             <TableContainer>
               <TableHeader align="left">
-                <h1>Wine</h1>
+                <h1>Soft-Drinks</h1>
               </TableHeader>
 
               <Table>
@@ -406,7 +409,7 @@ const Landing = () => {
           <Card>
             <ImageContainer imageUrl="/soft-drinks.webp" />
           </Card>
-        </Container>
+        </Container3>
       </BodyWrapper>
     </BodyContainer>
   );
