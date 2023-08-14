@@ -49,8 +49,8 @@ export const Card = styled.div`
   gap: 20px;
 `;
 export const ImageContainer = styled.div<ImageContainerProps>`
-  width: 500px;
-  height: 750px;
+  width: 400px;
+  height: 650px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -64,7 +64,7 @@ export const ImageContainer = styled.div<ImageContainerProps>`
     height: 600px;
   }
   @media screen and (max-width: 1300px) {
-    width: 350px;
+    width: 450px;
     height: 350px;
   }
 
