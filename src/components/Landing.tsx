@@ -22,6 +22,11 @@ const itemData = {
       usd: "$46.43"
     },
     {
+      name: "Johny Walker Double Black 1Ltr",
+      ksh: "11,000.00",
+      usd: "$78.57"
+    },
+    {
       name: "Jack Daniels 1ltr",
       ksh: "6,500.00",
       usd: "$46.43"
@@ -291,7 +296,7 @@ const itemData = {
       usd: "$2.14"
     }
   ],
-  Vapes: [{ name: "Vapes", ksh: "1500.00", usd: "$10.71" }]
+  Vapes: [{ name: "Vapes", ksh: "1,500.00", usd: "$10.71" }]
 };
 
 const Landing = () => {
