@@ -404,7 +404,7 @@ const Landing = () => {
             </TableContainer>
           </Card>
           <Card>
-            <ImageContainer imageUrl="/Gin.png" />
+            <ImageContainer imageUrl="/soft-drinks.webp" />
           </Card>
         </Container>
       </BodyWrapper>
