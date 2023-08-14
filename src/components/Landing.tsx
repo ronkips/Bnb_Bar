@@ -312,7 +312,7 @@ const Landing = () => {
           <Card>
             <TableContainer>
               <TableHeader align="left">
-                <h1>Whisky</h1>
+                <h1 style={{ color: "whitesmoke" }}>whiskey</h1>
               </TableHeader>
 
               <Table>
@@ -350,7 +350,7 @@ const Landing = () => {
           <Card>
             <TableContainer>
               <TableHeader align="left">
-                <h1>Beers</h1>
+                <h1 style={{ color: "whitesmoke" }}>Beers</h1>
               </TableHeader>
               <Table>
                 <thead>
@@ -380,7 +380,7 @@ const Landing = () => {
           <Card>
             <TableContainer>
               <TableHeader align="left">
-                <h1>Soft-Drinks</h1>
+                <h1 style={{ color: "whitesmoke" }}>Soft-Drinks</h1>
               </TableHeader>
 
               <Table>
