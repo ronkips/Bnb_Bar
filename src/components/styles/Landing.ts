@@ -95,7 +95,7 @@ export const Table = styled.table`
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
-  background-color: #f2f2f2;
+  // background-color: #f2f2f2;
 `;
 export const TableHeader = styled.th`
   padding: 20px 100px;
@@ -108,7 +108,7 @@ export const TableHeader = styled.th`
 `;
 export const TableRow = styled.tr`
   &:nth-child(even) {
-    background-color: #f2f2f2;
+    // background-color: #f2f2f2;
   }
 `;
 export const TableCell = styled.td`

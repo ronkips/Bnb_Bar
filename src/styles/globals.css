@@ -20,8 +20,9 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
   background: black;
+  color: antiquewhite;
+
 }
 
 a {
