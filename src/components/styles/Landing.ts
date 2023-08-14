@@ -26,6 +26,9 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding: 30px;
+  @media screen and (max-width: 1300px) {
+    width: 100%;
+  }
   @media screen and (max-width: 768px) {
     width: 100%;
     flex-direction: column-reverse;
