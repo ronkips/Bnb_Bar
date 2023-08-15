@@ -15,7 +15,6 @@ export const BodyWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  // padding-right: 30px;
 `;
 export const Container = styled.div`
   position: relative;
