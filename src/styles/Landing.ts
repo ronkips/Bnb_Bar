@@ -18,7 +18,7 @@ export const BodyWrapper = styled.div`
 `;
 export const Container = styled.div`
   position: relative;
-  width: 70%;
+  width: 80%;
   height: auto;
   display: flex;
   align-items: center;
@@ -40,12 +40,7 @@ export const Container1 = styled(Container)`
     flex-direction: column;
   }
 `;
-export const Container3 = styled(Container)`
-  @media screen and (max-width: 1300px) {
-    width: 100%;
-    flex-direction: column;
-  }
-`;
+
 
 export const Card = styled.div`
   position: relative;
@@ -56,16 +51,18 @@ export const Card = styled.div`
   gap: 20px;
 `;
 export const ImageContainer = styled.div<ImageContainerProps>`
-  width: 400px;
-  height: 650px;
+  width: 600px;
+  height: 600px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(${(props) => props.imageUrl});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  ${(props) =>
+    props.imageUrl ? `background-image: url(${props.imageUrl});` : ""}
+
   @media screen and (max-width: 1700px) {
     width: 400px;
     height: 600px;
@@ -74,12 +71,10 @@ export const ImageContainer = styled.div<ImageContainerProps>`
     width: 450px;
     height: 350px;
   }
-
   @media screen and (max-width: 768px) {
     width: 300px;
     height: 300px;
   }
-
   @media screen and (max-width: 300px) {
     width: 250px;
     height: 300px;
@@ -95,7 +90,7 @@ export const Table = styled.table`
   border-collapse: collapse;
   margin-bottom: 20px;
 `;
-export const TableHeader = styled.th`
+export const TH = styled.th`
   padding: 20px 100px;
   @media screen and (max-width: 768px) {
     padding: 20px 30px;
@@ -110,4 +105,8 @@ export const TableRow = styled.tr`
 `;
 export const TableCell = styled.td`
   padding: 10px;
+`;
+
+export const TextHeader = styled.h1`
+  font-color: "#ffa500";
 `;

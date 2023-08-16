@@ -1,17 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { BodyContainer } from "./styles/Landing";
-import { NavbarContainer } from "./styles/Navbar";
+import { BodyContainer } from "@/styles/Landing";
+import { NavbarContainer } from "@/styles/Navbar";
 
 const Navbar = () => {
-  const [isServer, setIsServer] = useState(false);
 
-  useEffect(() => {
-    setIsServer(true);
-  }, []);
-
-  if (!isServer) {
-    return null;
-  }
   return (
     <BodyContainer>
       <NavbarContainer>

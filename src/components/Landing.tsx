@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
 import {
   BodyContainer,
   BodyWrapper,
   Card,
   Container,
   Container1,
-  Container3,
   ImageContainer,
+  TH,
   Table,
   TableCell,
   TableContainer,
-  TableHeader,
-  TableRow
-} from "./styles/Landing";
+  TableRow,
+  TextHeader
+} from "@/styles/Landing";
+import React, { useEffect, useState } from "react";
 
 const itemData = {
   whiskey: [
@@ -300,33 +300,20 @@ const itemData = {
 };
 
 const Landing = () => {
-  const [isServer, setIsServer] = useState(false);
-
   const { whiskey, Beer, Soft_Drinks, Vapes } = itemData;
-
-  useEffect(() => {
-    setIsServer(true);
-  }, []);
-
-  if (!isServer) {
-    return null;
-  }
   return (
     <BodyContainer>
       <BodyWrapper>
         <Container1>
           <Card>
             <TableContainer>
-              <TableHeader align="left">
-                <h1 style={{ color: "#FFA500" }}>whiskey</h1>
-              </TableHeader>
-
+              <TextHeader style={{ color: "#FFA500" }}>Whiskey</TextHeader>
               <Table>
-                <thead>
+                <thead style={{ borderBottom: "0.1px solid gray" }}>
                   <tr>
-                    <TableHeader>Product</TableHeader>
-                    <TableHeader>Price (Ksh)</TableHeader>
-                    <TableHeader>Price (USD)</TableHeader>
+                    <TH>Product</TH>
+                    <TH>Price (Ksh)</TH>
+                    <TH>Price (USD)</TH>
                   </tr>
                 </thead>
                 <tbody>
@@ -345,25 +332,24 @@ const Landing = () => {
             </TableContainer>
           </Card>
           <Card>
-            <ImageContainer imageUrl="/whisky.png" />
+            <ImageContainer imageUrl="/whiskey.png" />
           </Card>
         </Container1>
 
         <Container>
           <Card>
-            <ImageContainer imageUrl="/Gin.png" />
+            <ImageContainer imageUrl="/beers.png" />
           </Card>
           <Card>
             <TableContainer>
-              <TableHeader align="left">
-                <h1 style={{ color: "#FFA500" }}>Beers</h1>
-              </TableHeader>
+              <TextHeader style={{ color: "#FFA500" }}>Beers</TextHeader>
+
               <Table>
-                <thead>
+                <thead style={{ borderBottom: "0.1px solid gray" }}>
                   <tr>
-                    <TableHeader>Product</TableHeader>
-                    <TableHeader>Price (Ksh)</TableHeader>
-                    <TableHeader>Price (USD)</TableHeader>
+                    <TH>Product</TH>
+                    <TH>Price (Ksh)</TH>
+                    <TH>Price (USD)</TH>
                   </tr>
                 </thead>
                 <tbody>
@@ -382,19 +368,17 @@ const Landing = () => {
             </TableContainer>
           </Card>
         </Container>
-        <Container3>
+        <Container1>
           <Card>
             <TableContainer>
-              <TableHeader align="left">
-                <h1 style={{ color: "#FFA500" }}>Soft-Drinks</h1>
-              </TableHeader>
+              <TextHeader style={{ color: "#FFA500" }}>Soft-Drinks</TextHeader>
 
               <Table>
-                <thead>
+                <thead style={{ borderBottom: "0.1px solid gray" }}>
                   <tr>
-                    <TableHeader>Product</TableHeader>
-                    <TableHeader>Price (Ksh)</TableHeader>
-                    <TableHeader>Price (USD)</TableHeader>
+                    <TH>Product</TH>
+                    <TH>Price (Ksh)</TH>
+                    <TH>Price (USD)</TH>
                   </tr>
                 </thead>
                 <tbody>
@@ -413,32 +397,30 @@ const Landing = () => {
             </TableContainer>
           </Card>
           <Card>
-            <ImageContainer imageUrl="/soft-drinks.webp" />
+            <ImageContainer imageUrl="/sweetdrinks.png" />
           </Card>
-        </Container3>
+        </Container1>
         <Container>
           <Card>
-            <ImageContainer imageUrl="/vapes.jpg" />
+            <ImageContainer imageUrl="/vapes.png" />
           </Card>
           <Card>
             <TableContainer>
-              <TableHeader align="left">
-                <h1 style={{ color: "#FFA500" }}>Vapes</h1>
-              </TableHeader>
+              <TextHeader style={{ color: "#FFA500" }}>Vapes</TextHeader>
 
               <Table>
-                <thead>
+                <thead style={{ borderBottom: "0.1px solid gray" }}>
                   <tr>
-                    <TableHeader>Product</TableHeader>
-                    <TableHeader>Price (Ksh)</TableHeader>
-                    <TableHeader>Price (USD)</TableHeader>
+                    <TH>Product</TH>
+                    <TH>Price (Ksh)</TH>
+                    <TH>Price (USD)</TH>
                   </tr>
                 </thead>
                 <tbody>
                   {Vapes.map((product, index) => (
                     <TableRow
                       key={index}
-                      // style={{ borderBottom: "0.1px solid gray" }}
+                      style={{ borderBottom: "0.1px solid gray" }}
                     >
                       <TableCell align="left">{product.name}</TableCell>
                       <TableCell align="center">{product.ksh}</TableCell>

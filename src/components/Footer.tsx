@@ -1,8 +1,13 @@
 import React from "react";
-import { FooterContainer } from "./styles/Footer";
+import { FooterContainer } from "@/styles/Footer";
 
 const Footer = () => {
-  return <FooterContainer>24 hr Service</FooterContainer>;
+  return (
+    <FooterContainer>
+      <h2>24 hr Service</h2>
+      <p>copywrite @{new Date().getFullYear()} BNB Bar</p>
+    </FooterContainer>
+  );
 };
 
 export default Footer;
