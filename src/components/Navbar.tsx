@@ -3,7 +3,6 @@ import { BodyContainer } from "@/styles/Landing";
 import { NavbarContainer } from "@/styles/Navbar";
 
 const Navbar = () => {
-
   return (
     <BodyContainer>
       <NavbarContainer>

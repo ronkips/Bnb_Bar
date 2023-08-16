@@ -9,7 +9,10 @@ export const NavbarContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-    h1 {
+  h1 {
     font-size: 4vw;
+    @media screen and (max-width: 768px) {
+      font-size: 8vw;
+    }
   }
 `;

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <h2>24 hr Service</h2>
-      <p>copywrite @{new Date().getFullYear()} BNB Bar</p>
+      <p> Copyright @{new Date().getFullYear()} Trusted Homes</p>
     </FooterContainer>
   );
 };

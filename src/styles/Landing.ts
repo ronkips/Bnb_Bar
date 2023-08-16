@@ -30,17 +30,16 @@ export const Container = styled.div`
   }
   @media screen and (max-width: 1300px) {
     width: 100%;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 `;
 
 export const Container1 = styled(Container)`
   @media screen and (max-width: 1300px) {
     width: 100%;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 `;
-
 
 export const Card = styled.div`
   position: relative;
